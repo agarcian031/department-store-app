@@ -10,7 +10,14 @@
   </head>
 
   <body>
-   <%= render 'layouts/navbar' %>
+      <div class="container">
+    <nav>
+    <div class="nav-wrapper #9fa8da indigo lighten-3">
+      <ul id="nav-mobile" class="left hide-on-med-and-down">
+         <%= render 'layouts/navbar' %>
+      </ul>
+    </div>
+    </nav>
     <%= yield %>
   </body>
 </html>

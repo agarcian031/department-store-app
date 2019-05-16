@@ -1,7 +1,11 @@
-<h1>Click a Department To View Content</h1>
-<%= link_to 'Create a new department', new_department_path %>
+<h1 class="center">The Department Store</h1>
+<hr>
+<h5>Here is a list of our departments:</h5>
+<hr>
+<br>
+<%= link_to 'Create a new department', new_department_path, class:'btn purple lighten-2 white-text hoverable' %>
 <ul>
   <% @departments.each do |department| %>
-    <li><%= link_to department.name, department_path(department.id) %></li>
+    <li><h4><%= link_to department.name, department_path(department.id), class:'btn purple lighten-2 white-text hoverable' %></h4></li>
   <% end %>
 </ul>

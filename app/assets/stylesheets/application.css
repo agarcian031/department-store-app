@@ -13,3 +13,28 @@
  *= require_tree .
  *= require_self
  */
+ @import "materialize";
+ @import url('https://fonts.googleapis.com/css?family=Dosis:400,600,700');
+
+ * {
+   margin: 0; 
+   padding: 0; 
+   box-sizing: border-box; 
+   font-family: Dosis, Arial, Helvetica, sans-serif; 
+ }
+
+ .btn-layout {
+   display: flex; 
+   flex-direction: row; 
+   justify-content: space-around; 
+ }
+
+ .back-btn {
+   margin: 20px; 
+   display: flex; 
+   justify-content: center; 
+ }
+ /* .btn {
+  display: flex; 
+  justify-content: center;  
+  } */
